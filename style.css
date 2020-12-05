@@ -5,24 +5,36 @@
 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #131313;
 }
 
-.navbar {
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border: 2px solid #fff;
+    height: 100px;
+
+}
+
+/* .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    height: 100px;
-    width: 100%;
+
     border: 2px solid #fff;
     
-}
+} */
 
 .logo {
+    margin-top: 5%;
     cursor: pointer;
+    margin-left: 5%;
     
     /* transition: all 0.3s ease-out; */
 }
@@ -123,28 +135,62 @@
 
 .mobile_view .bar {
     display: block;
-    position: relative;
     cursor: pointer;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+
+}
+
+#mobile {
+    position: absolute;
+    margin-top: 5%;
+    right: 5%;
+    transform: translate(5% ,20%)
+
 }
 
 .list-menu {
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
     position: absolute;
+    align-items: center;
+    align-content: center;
+    transition: all 0.5s ease;
+    margin-top: 10%;
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+    top: -1000px;
+    z-index: 1;
+    background-color: gray;
+  }
 
 }
 
-.list-links {
-    display: grid;
-    list-style: none;
+.list-menu.active {
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 100%;
+    font-size: 1.6rem;
+
+}
+
+.list {
+    display: table;
     cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    align-items: center ;
+    height: 100px;
+    width: 100%;
     text-emphasis: none;
     text-decoration: none;
 
 }
+
+
 
 .list a {
     font-family: 'Poppins', sans-serif;
@@ -153,13 +199,35 @@
     color: #fff;
 }
 
+.list-items {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: table;
+}
+
 .btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: none;
+
+    width: 100%;
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+}
+
+#mobile.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+#mobile.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#mobile.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 }
