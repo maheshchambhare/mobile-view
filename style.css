@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 
 @media screen and ( max-width : 960px) {
 
@@ -11,6 +13,153 @@
 .navbar {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+    width: 100%;
+    border: 2px solid #fff;
     
 }
+
+.logo {
+    cursor: pointer;
+    
+    /* transition: all 0.3s ease-out; */
+}
+
+
+.logo a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-emphasis: none;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    margin: 0;
+    padding: 0;
+   
+    width: 100%;
+   
+
+}
+
+
+
+.logo .logoo:hover {
+
+    background: rgb(70,204,255);
+    background: linear-gradient(90deg, rgba(70,204,255,1) 4%, rgba(250,250,250,1) 50%, rgba(190,244,255,1) 71%);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* transition: all 0.3s ease-out; */
+    font-size: 1.8rem;
+}
+.logo .logo1:hover {
+
+    background: rgb(70,204,255);
+    background: linear-gradient(90deg, rgba(70,204,255,1) 4%, rgba(250,250,250,1) 50%, rgba(190,244,255,1) 71%);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* transition: all 0.3s ease-out; */
+    font-size: 1.8rem;
+}
+.logo .logo2:hover {
+
+    background: rgb(70,204,255);
+    background: linear-gradient(90deg, rgba(70,204,255,1) 4%, rgba(250,250,250,1) 50%, rgba(190,244,255,1) 71%);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* transition: all 0.3s ease-out; */
+    font-size: 1.8rem;
+}
+.logo .logo3:hover {
+
+    background: rgb(206,40,242);
+    background: linear-gradient(180deg, rgba(206,40,242,1) 10%, rgba(255,219,0,1) 41%, rgba(232,124,124,1) 71%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 0.3s ease-out;
+    font-size: 3rem;
+}
+.logo .logo4:hover {
+
+    background: rgb(70,204,255);
+    background: linear-gradient(90deg, rgba(70,204,255,1) 4%, rgba(250,250,250,1) 50%, rgba(190,244,255,1) 71%);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* transition: all 0.3s ease-out; */
+    font-size: 1.8rem;
+}
+.logo .logo5:hover {
+
+    background: rgb(70,204,255);
+    background: linear-gradient(90deg, rgba(70,204,255,1) 4%, rgba(250,250,250,1) 50%, rgba(190,244,255,1) 71%);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* transition: all 0.3s ease-out; */
+    font-size: 1.8rem;
+}
+
+.mobile_view .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+.mobile_view .bar {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.list-menu {
+    display: grid;
+    grid-template-columns: auto;
+    position: absolute;
+
+}
+
+.list-links {
+    display: grid;
+    list-style: none;
+    cursor: pointer;
+    text-emphasis: none;
+    text-decoration: none;
+
+}
+
+.list a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 }
