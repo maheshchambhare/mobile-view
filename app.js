@@ -1,5 +1,5 @@
 const menu = document.querySelector('#mobile')
-const menulinks = document.querySelector('.mobile_view')
+const menulinks = document.querySelector('.list-menu')
 
 const mobilemenu = () => {
      menu.classList.toggle('is-active')

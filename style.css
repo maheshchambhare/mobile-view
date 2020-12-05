@@ -13,30 +13,23 @@
 
 .container {
 
+    overflow: hidden;
+
     display: flex;
     justify-content: space-between;
     align-content: center;
     border: 2px solid #fff;
     height: 100px;
+    z-index: 99;
 
 }
 
-/* .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-
-    border: 2px solid #fff;
-    
-} */
 
 .logo {
     margin-top: 5%;
     cursor: pointer;
     margin-left: 5%;
     
-    /* transition: all 0.3s ease-out; */
 }
 
 
@@ -154,37 +147,43 @@
     position: absolute;
     align-items: center;
     align-content: center;
-    transition: all 0.5s ease;
-    margin-top: 10%;
-    height: 80%;
+    transition: all 0.3s ease;
+    height: auto;
     width: 100%;
     margin: 0;
-    opacity: 1;
     top: -1000px;
-    z-index: 1;
-    background-color: gray;
+    opacity: 0;
+    z-index: -1; 
   }
 
 }
 
 .list-menu.active {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    transition: all 0.7s ease;
+    height: auto;
     width: 100%;
+    margin: 0;
+    top: 120px;
     opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 100%;
-    font-size: 1.6rem;
+    z-index: -1; 
 
 }
 
+
 .list {
-    display: table;
     cursor: pointer;
     justify-content: center;
     align-content: center;
     align-items: center ;
     height: 100px;
     width: 100%;
+    list-style: none;
     text-emphasis: none;
     text-decoration: none;
 
